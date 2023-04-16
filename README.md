@@ -1,6 +1,6 @@
 The Efficient String Library
 -
-As soon as I learned about bitfields and bitwise operations, I discovered my interest in binary and in bit manipulation. Many thoughts came to me in terms of how to use this knowledge to produce more memory efficienct code in C++. 
+As soon as I started learning about bitfields and bitwise operations, I discovered my interest in binary and in bit manipulation. Many thoughts came to me in terms of how to use this knowledge to produce more memory efficienct code in C++. 
 
 My first idea was to try and figure out a way to create a more efficient string class, that uses the exact amount of bits needed to store each ASCII character, rather than having 8 bits to store a character with an ASCII value that can fit in 6 bits. 
 
