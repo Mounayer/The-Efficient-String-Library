@@ -17,7 +17,7 @@ The 7-bit ASCII character set covers 128 different characters, which include:
         - Uppercase English letters (A-Z)
         - Lowercase English letters (a-z)
         - Decimal digits (0-9)
-        - Basic puntuation marks and symbols
+        - Basic punctuation marks and symbols
         - Control characters (e.g., newline, tab, and carriage return)
 In the absence of Unicode, 7-bit ASCII characters would suffice for many applications that use only the English language and simple symbols, however it would be insufficient for representing the diverse characters and symbols used in other languages or more complex applications.
 
