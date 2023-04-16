@@ -574,5 +574,5 @@ Global Functions
 
 Final Words
 -
-I hope that this library can be of use for you! Have fun!
+I hope that this library can be of use to you! Have fun!
 
