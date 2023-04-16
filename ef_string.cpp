@@ -260,7 +260,7 @@ namespace std
 
     ef_string& ef_string::operator+=(const char* other)
     {
-        auto size = strlen(other) + 1;
+        auto size = strlen(other);
         for (auto i = 0; i < size; ++i)
         {
             m_bits.push_back(StringBit(other[i]));
