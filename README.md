@@ -119,6 +119,9 @@ Member Functions
         ef_string& operator=(const ef_string& other);
 
         // Copy Assignment Operator
+        ef_string& operator=(char other);
+
+        // Copy Assignment Operator
         ef_string& operator=(const std::string& temp);
 
         // Move Assignment Operator
@@ -528,6 +531,12 @@ Member Functions
         // within the range [pos - n + 1, pos].
         // If no character is found within the specified range, returns std::ef_string::npos.
         size_t find_last_of(const std::ef_string& str, size_t pos, size_t n) const;
+        
+        // Returns a copy of the ef_string with all alpha characters in upper case
+        ef_string toUpper() const;
+
+        // Returns a copy of the ef_string with all alpha characters in lower case
+        ef_string toLower() const;
         
 Global Functions
 - 
