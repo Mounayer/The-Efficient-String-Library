@@ -572,4 +572,7 @@ Global Functions
         inline double ef_stod(ef_string to_convert);
     
 
+Final Words
+-
+I hope that this library can be of use for you! Have fun!
 
