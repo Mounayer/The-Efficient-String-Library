@@ -14,11 +14,11 @@ However, even if the 8th bit wasn't there, the 7 bit representation of the "char
 
 The 7-bit ASCII character set covers 128 different characters, which include:
 
-    - Uppercase English letters (A-Z)
-    - Lowercase English letters (a-z)
-    - Decimal digits (0-9)
-    - Basic puntuation marks and symbols
-    - Control characters (e.g., newline, tab, and carriage return)
+        - Uppercase English letters (A-Z)
+        - Lowercase English letters (a-z)
+        - Decimal digits (0-9)
+        - Basic puntuation marks and symbols
+        - Control characters (e.g., newline, tab, and carriage return)
 In the absence of Unicode, 7-bit ASCII characters would suffice for many applications that use only the English language and simple symbols, however it would be insufficient for representing the diverse characters and symbols used in other languages or more complex applications.
 
 The Efficient String Library was created for using only English text and basic symbols. However its limitations would become evident when working with non-English languages and more diverse character sets.
@@ -60,7 +60,7 @@ Below is a fragment of code demonstrating the memory efficiency of the Efficient
 Output:
 
         String object size: [550000]
-        Efficient String object size: [525000]
+        Efficient String object size: [481250]
 
 As expected, 12.5% memory efficiency.
 
