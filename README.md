@@ -29,7 +29,7 @@ The Efficient String Library is a string library replica, that uses 7-bits for c
 
 Benefits of using the Efficient String Library:
 
-        -Memory Efficiency: By using only 7 bits per character, you can save a whopping 12.5% memory compared to using 8 bits.
+        - Memory Efficiency: By using only 7 bits per character, you can save a whopping 12.5% memory compared to using 8 bits.
         - Simplified Encoding and Decoding
         - Faster transmission
         - Compatibility with legacy systems
