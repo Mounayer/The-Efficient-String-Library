@@ -531,45 +531,45 @@ Member Functions
         
 Global Functions
 - 
-         // Extracts from istream until delimiter is met
-    inline std::istream& getline(std::istream& is, ef_string& str, char delim = '\n');
+        // Extracts from istream until delimiter is met
+        inline std::istream& getline(std::istream& is, ef_string& str, char delim = '\n');
 
-    // Swaps contents of lhs and rhs ef_strings
-    inline void swap(ef_string& lhs, ef_string& rhs);
+        // Swaps contents of lhs and rhs ef_strings
+        inline void swap(ef_string& lhs, ef_string& rhs);
 
-    // Compares lhs and rhs lexicographically
-    inline bool compare(ef_string& lhs, ef_string& rhs);
+        // Compares lhs and rhs lexicographically
+        inline bool compare(ef_string& lhs, ef_string& rhs);
 
-    // Compares lhs and rhs lexicographically
-    inline bool compare(ef_string& lhs, std::string& rhs);
+        // Compares lhs and rhs lexicographically
+        inline bool compare(ef_string& lhs, std::string& rhs);
 
-    // Compares lhs and rhs lexicographically
-    inline bool compare(ef_string& lhs, const char* rhs);
+        // Compares lhs and rhs lexicographically
+        inline bool compare(ef_string& lhs, const char* rhs);
 
-    // Returns ef_string representation of numberic value
-    inline ef_string to_efstring(size_t value);
+        // Returns ef_string representation of numberic value
+        inline ef_string to_efstring(size_t value);
 
-    // Returns integer representation of ef_string
-    // Stops at occurrence if first none-integer
-    inline int ef_stoi(ef_string to_convert);
+        // Returns integer representation of ef_string
+        // Stops at occurrence if first none-integer
+        inline int ef_stoi(ef_string to_convert);
 
-    // Returns long representation of ef_string
-    inline long ef_stol(ef_string to_convert);
+        // Returns long representation of ef_string
+        inline long ef_stol(ef_string to_convert);
 
-    // Returns long long representation of ef_string
-    inline long long ef_stoll(ef_string to_convert);
+        // Returns long long representation of ef_string
+        inline long long ef_stoll(ef_string to_convert);
 
-    // Returns unsigned long representation of ef_string
-    inline unsigned long ef_stoul(ef_string to_convert);
+        // Returns unsigned long representation of ef_string
+        inline unsigned long ef_stoul(ef_string to_convert);
 
-    // Returns unsigned long long representation of ef_string
-    inline unsigned long long ef_stoull(ef_string to_convert);
+        // Returns unsigned long long representation of ef_string
+        inline unsigned long long ef_stoull(ef_string to_convert);
 
-    // Returns float representation of ef_string
-    inline float ef_stof(ef_string to_convert);
+        // Returns float representation of ef_string
+        inline float ef_stof(ef_string to_convert);
 
-    // Returns double representation of ef_string
-    inline double ef_stod(ef_string to_convert);
+        // Returns double representation of ef_string
+        inline double ef_stod(ef_string to_convert);
     
 
 
