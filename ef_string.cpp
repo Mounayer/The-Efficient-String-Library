@@ -201,6 +201,16 @@ namespace std
         return *this;
     }
 
+    ef_string& ef_string::operator=(char other)
+    {
+        clear();
+        m_bits.push_back(StringBit(other));
+        m_size = 1;
+        m_capacity = m_bits.capacity();
+
+        return *this;
+    }
+
     ef_string& ef_string::operator=(const std::string& temp)
     {
         ef_string other(temp.c_str());
@@ -1273,6 +1283,36 @@ namespace std
     size_t ef_string::find_last_of(const std::ef_string& str, size_t pos, size_t n) const
     {
         return find_last_of(str.c_str(), pos, std::min(n, str.length()));
+    }
+
+    ef_string ef_string::toUpper() const
+    {
+        ef_string temp(*this);
+
+        for (auto i = 0u; i < m_size; ++i)
+        {
+            if (isalpha(temp.m_bits[i].a))
+            {
+                temp.m_bits[i].a = toupper(temp.m_bits[i].a);
+            }
+        }
+
+        return temp;
+    }
+
+    ef_string ef_string::toLower() const
+    {
+        ef_string temp(*this);
+
+        for (auto i = 0u; i < m_size; ++i)
+        {
+            if (isalpha(temp.m_bits[i].a))
+            {
+                temp.m_bits[i].a = tolower(temp.m_bits[i].a);
+            }
+        }
+
+        return temp;
     }
 
 }
