@@ -39,7 +39,7 @@ However, these benefits come with the trade-off of a limited character set. Usin
 Memory Efficiency Example
 - 
 Below is a fragment of code demonstrating the memory efficiency of the Efficient String Library.
-
+```cpp
         int main()
         {
             std::string string_ver{};
@@ -56,7 +56,7 @@ Below is a fragment of code demonstrating the memory efficiency of the Efficient
                 << (ef_string_ver.size() * ef_string_ver.characterSize())
                 << "]\n";
         }
-        
+```       
 Output:
 
         String object size: [550000]
@@ -76,6 +76,7 @@ The Efficient String Library is used exactly like the String Library, it has the
 
 Member Functions
 - 
+```cpp
         // Maximum value size_t can store
         static constexpr size_t npos = static_cast<size_t>(-1);
 
@@ -537,9 +538,10 @@ Member Functions
 
         // Returns a copy of the ef_string with all alpha characters in lower case
         ef_string toLower() const;
-        
+```        
 Global Functions
 - 
+```cpp
         // Extracts from istream until delimiter is met
         inline std::istream& getline(std::istream& is, ef_string& str, char delim = '\n');
 
@@ -579,7 +581,7 @@ Global Functions
 
         // Returns double representation of ef_string
         inline double ef_stod(ef_string to_convert);
-    
+```    
 
 Final Words
 -
