@@ -6,7 +6,7 @@ My first idea was to try and figure out a way to create a more efficient string 
 
 I did some research on the ability to dynamically change the value of an allocated bitfield during runtime, however, bitfields are allocated during compile-time only, so that wasn't possible.
 
-Afterwards, still trying to pursue my idea of a more efficient string class, I did some more research on the ASCII table, and I realized that, only 7 bits are neccessary to represent 128 different characters. The 8th bit was not used for encoding characters in the standard ASCII character set. 
+Afterwards, still trying to pursue my idea of a more efficient string class, I did some more research on the ASCII table, and I realized that, only 7 bits are necessary to represent 128 different characters. The 8th bit was not used for encoding characters in the standard ASCII character set. 
 
 However, the 8th bit has its uses. The 8th bit of the "char" data type helps represent up to 256 different characters. One well-known example of an extended character set is the ISO/IEC 8859 series. Later on, the use of the 8th bit was even more needed. Unicode, while the 8th bit was initially unused in the original 7-bit ASCII character set, it has since found usage in extended character sets and modern Unicode character encodings to represent a broader range of characters from different languages and applications.
 
