@@ -1,6 +1,6 @@
 The Efficient String Library
 -
-As soon as I started learning about bitfields and bitwise operations, I discovered my interest in binary and in bit manipulation. Many thoughts came to me in terms of how to use this knowledge to produce more memory efficienct code in C++. 
+As soon as I started learning about bitfields and bitwise operations, I discovered my interest in binary and in bit manipulation. Many thoughts came to me in terms of how to use this knowledge to produce more memory efficient code in C++. 
 
 My first idea was to try and figure out a way to create a more efficient string class, that uses the exact amount of bits needed to store each ASCII character, rather than having 8 bits to store a character with an ASCII value that can fit in 7 bits. 
 
@@ -10,7 +10,7 @@ Afterwards, still trying to pursue my idea of a more efficient string class, I d
 
 However, the 8th bit has its uses. The 8th bit of the "char" data type helps represent up to 256 different characters. One well-known example of an extended character set is the ISO/IEC 8859 series. Later on, the use of the 8th bit was even more needed. Unicode, while the 8th bit was initially unused in the original 7-bit ASCII character set, it has since found usage in extended character sets and modern Unicode character encodings to represent a broader range of characters from different languages and applications.
 
-However, even if the 8th bit wasn't there, the 7 bit representation of the "char" data type is still useful in many scenarios, particualrly for representing English text and basic symbols.
+However, even if the 8th bit wasn't there, the 7 bit representation of the "char" data type is still useful in many scenarios, particularly for representing English text and basic symbols.
 
 The 7-bit ASCII character set covers 128 different characters, which include:
 
